@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DDDAC40A89B100E2DE82C995 /* Pods_pinterest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7941BE8A7A8D5B655E1A49C6 /* Pods_pinterest.framework */; };
 		F3C4CCE22220885000A8986D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3C4CCE12220885000A8986D /* AppDelegate.swift */; };
 		F3C4CCE42220885000A8986D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3C4CCE32220885000A8986D /* ViewController.swift */; };
 		F3C4CCE72220885000A8986D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F3C4CCE52220885000A8986D /* Main.storyboard */; };
@@ -15,6 +16,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3E099A31FC4BB5876090C2C4 /* Pods-pinterest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-pinterest.release.xcconfig"; path = "Target Support Files/Pods-pinterest/Pods-pinterest.release.xcconfig"; sourceTree = "<group>"; };
+		7941BE8A7A8D5B655E1A49C6 /* Pods_pinterest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_pinterest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B71AD610EA4E91050E9AE314 /* Pods-pinterest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-pinterest.debug.xcconfig"; path = "Target Support Files/Pods-pinterest/Pods-pinterest.debug.xcconfig"; sourceTree = "<group>"; };
 		F3C4CCDE2220885000A8986D /* pinterest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = pinterest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F3C4CCE12220885000A8986D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F3C4CCE32220885000A8986D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +26,7 @@
 		F3C4CCE82220885000A8986D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F3C4CCEB2220885000A8986D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F3C4CCED2220885000A8986D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F3F611482220A6650085D637 /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +34,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DDDAC40A89B100E2DE82C995 /* Pods_pinterest.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5E753D390972F79C173BC522 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7941BE8A7A8D5B655E1A49C6 /* Pods_pinterest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F0AF49EECE16B73A66BE61FF /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B71AD610EA4E91050E9AE314 /* Pods-pinterest.debug.xcconfig */,
+				3E099A31FC4BB5876090C2C4 /* Pods-pinterest.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		F3C4CCD52220885000A8986D = {
 			isa = PBXGroup;
 			children = (
 				F3C4CCE02220885000A8986D /* pinterest */,
 				F3C4CCDF2220885000A8986D /* Products */,
+				F0AF49EECE16B73A66BE61FF /* Pods */,
+				5E753D390972F79C173BC522 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -60,6 +85,7 @@
 				F3C4CCE82220885000A8986D /* Assets.xcassets */,
 				F3C4CCEA2220885000A8986D /* LaunchScreen.storyboard */,
 				F3C4CCED2220885000A8986D /* Info.plist */,
+				F3F611482220A6650085D637 /* GoogleService-Info.plist */,
 			);
 			path = pinterest;
 			sourceTree = "<group>";
@@ -71,9 +97,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F3C4CCF02220885000A8986D /* Build configuration list for PBXNativeTarget "pinterest" */;
 			buildPhases = (
+				DBBD17FF07B626934A5A7F70 /* [CP] Check Pods Manifest.lock */,
 				F3C4CCDA2220885000A8986D /* Sources */,
 				F3C4CCDB2220885000A8986D /* Frameworks */,
 				F3C4CCDC2220885000A8986D /* Resources */,
+				AF3113AFFA8D8506A5FE19A2 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -130,6 +158,51 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		AF3113AFFA8D8506A5FE19A2 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-pinterest/Pods-pinterest-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
+				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-pinterest/Pods-pinterest-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DBBD17FF07B626934A5A7F70 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-pinterest-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		F3C4CCDA2220885000A8986D /* Sources */ = {
@@ -272,6 +345,7 @@
 		};
 		F3C4CCF12220885000A8986D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B71AD610EA4E91050E9AE314 /* Pods-pinterest.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -286,6 +360,7 @@
 		};
 		F3C4CCF22220885000A8986D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3E099A31FC4BB5876090C2C4 /* Pods-pinterest.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
